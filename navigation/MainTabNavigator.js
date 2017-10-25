@@ -79,7 +79,7 @@ export default TabNavigator(
           },
           Settings: {
             barBackgroundColor:'#EEEEEE',
-            labelColor: '#434343', // like in the standalone version, this will override the already specified `labelColor` for this tab
+            labelColor: '#430611', // like in the standalone version, this will override the already specified `labelColor` for this tab
             activeLabelColor: '#212121',
           },
         }
