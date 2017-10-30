@@ -1,18 +1,21 @@
 import { Notifications } from 'expo';
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
-
 import MainTabNavigator from './MainTabNavigator';
 import registerForPushNotificationsAsync from '../api/registerForPushNotificationsAsync';
+import AddConferenceScreen from "../screens/AddConferenceScreen";
 
 const RootStackNavigator = StackNavigator(
   {
     Main: {
       screen: MainTabNavigator,
     },
+    Add:{
+      screen:AddConferenceScreen,
+    }
   },
   {
-    navigationOptions: () => ({
+    navigationOptions: (navigation) => ({
       headerTitleStyle: {
         fontWeight: 'normal',
       },
@@ -21,6 +24,7 @@ const RootStackNavigator = StackNavigator(
 );
 
 export default class RootNavigator extends React.Component {
+
   componentDidMount() {
     this._notificationSubscription = this._registerForPushNotifications();
   }
@@ -30,7 +34,8 @@ export default class RootNavigator extends React.Component {
   }
 
   render() {
-    return <RootStackNavigator />;
+    return <RootStackNavigator
+    navHandler={this.props.navigation}/>;
   }
 
   _registerForPushNotifications() {

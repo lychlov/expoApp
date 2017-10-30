@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Button,
   Image,
   Platform,
   ScrollView,
@@ -8,28 +9,46 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
+import {Ionicons} from '@expo/vector-icons';
 import {WebBrowser} from 'expo';
 
 import {MonoText} from '../components/StyledText';
 import Colors from "../constants/Colors";
+import {StackNavigator} from "react-navigation";
+import AddConferenceScreen from './AddConferenceScreen'
+
 
 export default class HomeScreen extends React.Component {
-  static navigationOptions = {
+
+  constructor(){
+  super();
+}
+
+
+  static navigationOptions=({navigation}) =>( {
     title: 'Home',
-    backgroundColor:'#110708',
-    tabBarIcon:()=>(<Ionicons
+
+    headerRight:<Ionicons name={'ios-add-circle-outline'}
+                          onPress={()=>navigation.navigate('Add')}
+                                      size={30}
+                                     style={{marginRight: 10}}/>,
+    backgroundColor: '#110708',
+    tabBarIcon: () => (<Ionicons
         name={Platform.OS === 'ios'
             ? `ios-information-circle`
             : 'md-information-circle-outline'}
         size={28}
-        style={{ marginBottom: -3 }}
+        style={{marginBottom: -3}}
         color={Colors.tabIconDefault}
     />),
-    labelColor:Colors.tabIconDefault,
-  };
+    labelColor: Colors.tabIconDefault,
+  });
+
 
   render() {
+
+    const {navigate} = this.props.navigation;
+
     return (
         <View style={styles.container}>
           <ScrollView
@@ -61,7 +80,8 @@ export default class HomeScreen extends React.Component {
                 </MonoText>
               </View>
 
-              <Text style={styles.getStartedText}>
+              <Text style={styles.getStartedText}
+              onPress={()=>navigate('Add')}>
                 水电费峻峰
                 Change this text and your app will automatically reload.
               </Text>
@@ -93,6 +113,10 @@ export default class HomeScreen extends React.Component {
         </View>
     );
   }
+   _addTap=()=>{
+     const {navigate} = this.props.navigation;
+      navigate('Add')
+   };
 
   _maybeRenderDevelopmentModeWarning() {
     if (__DEV__) {
@@ -128,8 +152,13 @@ export default class HomeScreen extends React.Component {
         'https://docs.expo.io/versions/latest/guides/up-and-running.html#can-t-see-your-changes'
     );
   };
-}
+};
 
+const HomeStack =StackNavigator({
+  Add:{
+    screen:AddConferenceScreen,
+  }
+});
 const styles = StyleSheet.create({
   container: {
     flex: 1,
