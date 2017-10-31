@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ba1c29b6-8c09-4ecf-b5bd-7c99c32bccb2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/navigation/MainTabNavigator.js" afterPath="$PROJECT_DIR$/navigation/MainTabNavigator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screens/AddConferenceScreen.js" afterPath="$PROJECT_DIR$/screens/AddConferenceScreen.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/screens/HomeScreen.js" afterPath="$PROJECT_DIR$/screens/HomeScreen.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,26 +41,24 @@
       <file leaf-file-name="HomeScreen.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <marker date="1509415206002" expanded="true" signature="4573:4620" ph="{&quot;backgroundColor&quot;: '##fff'...}" />
-                <marker date="1509415206002" expanded="true" signature="4645:4765" ph="{&quot;color&quot;: 'rgba(0,0,0,0.4)'...}" />
-                <marker date="1509415206002" expanded="true" signature="4787:4812" ph="{...}" />
-                <marker date="1509415206002" expanded="true" signature="4834:4906" ph="{&quot;alignItems&quot;: 'center'...}" />
-                <marker date="1509415206002" expanded="true" signature="4924:5027" ph="{&quot;resizeMode&quot;: 'contain'...}" />
-                <marker date="1509415206002" expanded="true" signature="5052:5109" ph="{&quot;alignItems&quot;: 'center'...}" />
-                <marker date="1509415206002" expanded="true" signature="5133:5161" ph="{...}" />
-                <marker date="1509415206002" expanded="true" signature="5184:5225" ph="{&quot;color&quot;: 'rgba(96,100,109, 0.8)'...}" />
-                <marker date="1509415206002" expanded="true" signature="5253:5346" ph="{&quot;backgroundColor&quot;: 'rgba(0,0,0,0.05)'...}" />
-                <marker date="1509415206002" expanded="true" signature="5366:5468" ph="{&quot;color&quot;: 'rgba(96,100,109, 1)'...}" />
-              </folding>
+            <state relative-caret-position="252">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddConferenceScreen.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="external_api.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/constants/external_api.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddConferenceScreen.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/screens/AddConferenceScreen.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="504">
@@ -86,7 +83,7 @@
       <file leaf-file-name="MainTabNavigator.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/navigation/MainTabNavigator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-280">
+            <state relative-caret-position="392">
               <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
               <folding />
             </state>
@@ -137,10 +134,11 @@
         <option value="$PROJECT_DIR$/navigation/HomeStackNavigatiom.js" />
         <option value="$PROJECT_DIR$/navigation/HomeStackNavigation.js" />
         <option value="$PROJECT_DIR$/navigation/RootNavigation.js" />
-        <option value="$PROJECT_DIR$/screens/HomeScreen.js" />
         <option value="$PROJECT_DIR$/screens/SettingsScreen.js" />
         <option value="$PROJECT_DIR$/navigation/MainTabNavigator.js" />
         <option value="$PROJECT_DIR$/screens/AddConferenceScreen.js" />
+        <option value="$PROJECT_DIR$/screens/HomeScreen.js" />
+        <option value="$PROJECT_DIR$/constants/external_api.js" />
       </list>
     </option>
   </component>
@@ -226,6 +224,11 @@
             <path>
               <item name="expoApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="expoApp" type="462c0819:PsiDirectoryNode" />
+              <item name="constants" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="expoApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="expoApp" type="462c0819:PsiDirectoryNode" />
               <item name="navigation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -280,12 +283,12 @@
       <workItem from="1508941243795" duration="1837000" />
       <workItem from="1508943469170" duration="4542000" />
       <workItem from="1509025127161" duration="14161000" />
-      <workItem from="1509415886800" duration="2514000" />
+      <workItem from="1509415886800" duration="2789000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23054000" />
+    <option name="totallyTimeSpent" value="23329000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -388,19 +391,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1509415206002" expanded="true" signature="4573:4620" ph="{&quot;backgroundColor&quot;: '##fff'...}" />
-            <marker date="1509415206002" expanded="true" signature="4645:4765" ph="{&quot;color&quot;: 'rgba(0,0,0,0.4)'...}" />
-            <marker date="1509415206002" expanded="true" signature="4787:4812" ph="{...}" />
-            <marker date="1509415206002" expanded="true" signature="4834:4906" ph="{&quot;alignItems&quot;: 'center'...}" />
-            <marker date="1509415206002" expanded="true" signature="4924:5027" ph="{&quot;resizeMode&quot;: 'contain'...}" />
-            <marker date="1509415206002" expanded="true" signature="5052:5109" ph="{&quot;alignItems&quot;: 'center'...}" />
-            <marker date="1509415206002" expanded="true" signature="5133:5161" ph="{...}" />
-            <marker date="1509415206002" expanded="true" signature="5184:5225" ph="{&quot;color&quot;: 'rgba(96,100,109, 0.8)'...}" />
-            <marker date="1509415206002" expanded="true" signature="5253:5346" ph="{&quot;backgroundColor&quot;: 'rgba(0,0,0,0.05)'...}" />
-            <marker date="1509415206002" expanded="true" signature="5366:5468" ph="{&quot;color&quot;: 'rgba(96,100,109, 1)'...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -529,26 +520,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <marker date="1509415206002" expanded="true" signature="4573:4620" ph="{&quot;backgroundColor&quot;: '##fff'...}" />
-            <marker date="1509415206002" expanded="true" signature="4645:4765" ph="{&quot;color&quot;: 'rgba(0,0,0,0.4)'...}" />
-            <marker date="1509415206002" expanded="true" signature="4787:4812" ph="{...}" />
-            <marker date="1509415206002" expanded="true" signature="4834:4906" ph="{&quot;alignItems&quot;: 'center'...}" />
-            <marker date="1509415206002" expanded="true" signature="4924:5027" ph="{&quot;resizeMode&quot;: 'contain'...}" />
-            <marker date="1509415206002" expanded="true" signature="5052:5109" ph="{&quot;alignItems&quot;: 'center'...}" />
-            <marker date="1509415206002" expanded="true" signature="5133:5161" ph="{...}" />
-            <marker date="1509415206002" expanded="true" signature="5184:5225" ph="{&quot;color&quot;: 'rgba(96,100,109, 0.8)'...}" />
-            <marker date="1509415206002" expanded="true" signature="5253:5346" ph="{&quot;backgroundColor&quot;: 'rgba(0,0,0,0.05)'...}" />
-            <marker date="1509415206002" expanded="true" signature="5366:5468" ph="{&quot;color&quot;: 'rgba(96,100,109, 1)'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screens/SettingsScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -571,22 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/navigation/MainTabNavigator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-280">
-          <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/constants/external_api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="0" column="193" lean-forward="false" selection-start-line="0" selection-start-column="193" selection-end-line="0" selection-end-column="193" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/screens/AddConferenceScreen.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="504">
@@ -594,6 +549,30 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/navigation/MainTabNavigator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="25" column="3" lean-forward="false" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/screens/HomeScreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/constants/external_api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
