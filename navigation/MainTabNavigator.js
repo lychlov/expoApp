@@ -12,56 +12,52 @@ import AddConferenceScreen from "../screens/AddConferenceScreen";
 import Feather from "@expo/vector-icons/Feather";
 
 export default TabNavigator(
-    {
-      Home: {
-        screen: HomeScreen,
-      },
-      Contactors:{
-        screen:HomeScreen,
-      },
-      Links: {
-        screen: LinksScreen,
-      },
-
-      Settings: {
-        screen: SettingsScreen,
-      },
+  {
+    Home: {
+      screen: HomeScreen,
     },
-    {
+    Links: {
+      screen: LinksScreen,
+    },
+    Settings: {
+      screen: SettingsScreen,
+    },
+  },
+  {
 
-      navigationOptions: ({ navigation }) => ({
-        tabBarIcon: ({ focused }) => {
-          const { routeName } = navigation.state;
-          let iconName;
-          switch (routeName) {
-            case 'Home':
-              iconName = Platform.OS === 'ios'
-                ? `ios-information-circle${focused ? '' : '-outline'}`
-                : 'md-information-circle';
-              break;
-            case 'Links':
-              iconName = Platform.OS === 'ios'
-                ? `ios-link${focused ? '' : '-outline'}`
-                : 'md-link';
-              break;
-            case 'Settings':
-              iconName = Platform.OS === 'ios'
-                ? `ios-options${focused ? '' : '-outline'}`
-                : 'md-options';
-          }
-          return (
-            <Ionicons
-              name={iconName}
-              size={28}
-              style={{ marginBottom: -3 }}
-              color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
-            />
-          );
-        },
-      }),
-      tabBarComponent: NavigationComponent,
-      tabBarPosition: 'bottom',
-      animationEnabled: false,
-      swipeEnabled: false,
-    }
+    navigationOptions: ({navigation}) => ({
+      tabBarIcon: ({focused}) => {
+        const {routeName} = navigation.state;
+        let iconName;
+        switch (routeName) {
+          case 'Home':
+            iconName = Platform.OS === 'ios'
+              ? `ios-information-circle${focused ? '' : '-outline'}`
+              : 'md-information-circle';
+            break;
+          case 'Links':
+            iconName = Platform.OS === 'ios'
+              ? `ios-link${focused ? '' : '-outline'}`
+              : 'md-link';
+            break;
+          case 'Settings':
+            iconName = Platform.OS === 'ios'
+              ? `ios-options${focused ? '' : '-outline'}`
+              : 'md-options';
+        }
+        return (
+          <Ionicons
+            name={iconName}
+            size={28}
+            style={{marginBottom: -3}}
+            color={focused ? Colors.tabIconSelected : Colors.tabIconDefault}
+          />
+        );
+      },
+    }),
+    tabBarComponent: NavigationComponent,
+    tabBarPosition: 'bottom',
+    animationEnabled: false,
+    swipeEnabled: false,
+  }
 );
