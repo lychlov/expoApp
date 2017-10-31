@@ -28,7 +28,7 @@ export default TabNavigator(
       },
     },
     {
-      /*
+
       navigationOptions: ({ navigation }) => ({
         tabBarIcon: ({ focused }) => {
           const { routeName } = navigation.state;
@@ -58,70 +58,10 @@ export default TabNavigator(
             />
           );
         },
-      }),*/
-
-      tabBarOptions: {
-        bottomNavigationOptions: {
-          labelColor: 'white',
-          rippleColor: 'white',
-          shifting: false,
-          tabs: {
-            Home: {
-              barBackgroundColor: '#37474F',
-              label: 'Home',
-              labelColor: Colors.tabIconDefault,
-              activeLabelColor: Colors.tabIconSelected,
-              activeIcon: <Ionicons
-                  name={Platform.OS === 'ios'
-                      ? `ios-information-circle`
-                      : 'md-information-circle'}
-                  size={28}
-                  style={{marginBottom: -3}}
-                  color={Colors.tabIconSelected}
-              />,
-            },
-            Contactors: {
-              activeIcon: <Ionicons
-                  name={Platform.OS === 'ios'
-                      ? `ios-contacts`
-                      : 'md-contacts'}
-                  size={28}
-                  style={{marginBottom: -3}}
-                  color={Colors.tabIconSelected}
-              />,
-              barBackgroundColor: '#CDB38B',
-              labelColor: Colors.tabIconDefault,
-              activeLabelColor: Colors.tabIconSelected,
-
-            },
-            Links: {
-              activeIcon: <Ionicons
-                  name={Platform.OS === 'ios' ? 'ios-search' : 'md-search'}
-                  size={28}
-                  style={{marginBottom: -3}}
-                  color={Colors.tabIconSelected}/>,
-              barBackgroundColor: '#00796B',
-              labelColor: Colors.tabIconDefault,
-              activeLabelColor: Colors.tabIconSelected,
-
-            },
-            Settings: {
-              activeIcon: <Ionicons
-                  name={Platform.OS === 'ios' ? 'ios-settings' : 'ios-settings'}
-                  size={28}
-                  style={{marginBottom: -3}}
-                  color={Colors.tabIconSelected}
-              />,
-              barBackgroundColor: '#708090',
-              labelColor: Colors.tabIconDefault,
-              activeLabelColor: Colors.tabIconSelected,
-            },
-          }
-        }
-      },
+      }),
       tabBarComponent: NavigationComponent,
       tabBarPosition: 'bottom',
-      //animationEnabled: false,
-      //swipeEnabled: false,
+      animationEnabled: false,
+      swipeEnabled: false,
     }
 );
